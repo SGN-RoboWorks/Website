@@ -3,14 +3,14 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6TWMNYYLGY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TWMNYYLGY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-6TWMNYYLGY');
-</script>
+        gtag('config', 'G-6TWMNYYLGY');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -149,13 +149,21 @@
               "name": "Home Automation (Tamil Nadu)"
             }
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Hydroponics & Aquaponics (Tamil Nadu)"
-            }
-          },
+         {
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "Electronics Components Supply (Tamil Nadu)", // Your product name
+  // ... (Other properties like 'sku', 'description', 'image' can be added here)
+  "offers": [ // **This property is required and missing/misplaced in your current structure**
+    {
+      "@type": "Offer",
+      "priceCurrency": "INR", // 👈 Add currency
+      "price": "500.00", // 👈 Add price
+      "availability": "https://schema.org/InStock", // 👈 Add availability status
+      "url": "URL_TO_YOUR_PRODUCT_PAGE" // 👈 Add the product page URL
+    }
+  ]
+}
           {
             "@type": "Offer",
             "itemOffered": {
@@ -1339,7 +1347,7 @@
                         <p>Visionary Leader in Industrial IoT and Smart Factory Innovations.
                             13X Patent Holder in IoT and Robotics Applications, specializing in advanced Electronics,
                             Home Automation, and Adaptive Automation Systems for diverse industrial environments.</p>
-                        <a href="portfolio\ZengamersUniverse.html" class="btn btn-primary"
+                        <a href="https://ngokulnath.vercel.app/" class="btn btn-primary"
                             style="padding: 0.5rem 1rem; margin-top: 1rem; font-size: 0.85rem;">View Portfolio 🚀</a>
                     </div>
                     <div class="leader-card">
